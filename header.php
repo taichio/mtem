@@ -15,7 +15,7 @@
     <![endif]-->
 
     <!-- fav and touch icons -->
-    <?php wp_enqueue_script('test', get_bloginfo('template_directory') . '/js/bootstrap.min.js', array('jquery')); ?>
+    <?php wp_enqueue_script('test', get_bloginfo('template_directory') . 'dist/js/bootstrap.min.js', array('jquery')); ?>
     <?php wp_head(); ?>
     
     <script>
@@ -40,21 +40,31 @@
     </script>
   </head>
 
-  <body data-spy="scroll" data-target="#sidebar">
+  <body>
   <!-- Fixed navbar -->
     <div class="navbar navbar-default navbar-fixed-top">
-      <div class="container">
         <div class="navbar-header">
-        <a class="navbar-brand">Musica Todo El Mundo</a>
+        <a class="navbar-brand" href="<?php echo home_url(); ?>">Musica Todo El Mundo</a>
         </div>
         <div class="navbar-collapse collapse">
-        <ul class="nav navbar-nav">
-        <li><a href="about.html">About</a></li>
+          <ul class="nav navbar-nav">
+          <li><a href="about.html">About</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">カテゴリ<b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">プロデューサー別</a></li>
+              <li><a href="#">特集アーティスト</a></li>
+              <li><a href="#">楽器別</a></li>
+              <li><a href="#">国別</a></li>
+              <li><a href="#">レーベル</a></li>
+              <li><a href="#">年代</a></li>
+            </ul>
+          </li>
         </ul> 
         <!-- ログイン時 -->
-        <p class="navbar-text pull-right">○○さんお疲れ様です！</p>
+        <p class="navbar-text pull-right">Twitter</p>
+        <p class="navbar-text pull-right">contact</p>
         </div>
-      </div>
     </div>
   <!-- //Fixed navbar -->
 <!--  <header id="home" class="jumbotron masthead"> -->
