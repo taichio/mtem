@@ -1,0 +1,16 @@
+@charset "utf-8";
+/* 
+Theme Name: MTEM Records
+Author: taichi
+Version 1.0
+*/
+
+@import url('js/jquery-1.8.3.min.js');
+@import url('dist/css/bootstrap.css'); 
+@import url('css/flat-ui.css'); 	
+@import url('js/typeahead.js'); 
+@import url('js/bootstrap.min.js'); 
+
+body {
+	padding-top: 60px;
+}
